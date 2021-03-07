@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="C:/Users/rajat/Desktop/shop/css/styleMain.css">
+
+    <!-- Title Icon -->
+    <link rel="shortcut icon" href="C:/Users/rajat/Desktop/shop/assets/fav-icon.png">
+
+    <!-- Font Awesome for Icons -->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+
+    <title>Aipan Art</title>
+</head>
+
+<body>
+
+
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light  ">
+
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#" id="gif">Mandala Bazaar</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item px-2">
+                        <a class="nav-link active" aria-current="page" href="C:/Users/rajat/Desktop/shop/main.html"
+                            onMouseOver="this.style.color='cornflowerblue'"
+                            onMouseOut="this.style.color='black'">Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link active" href="C:/Users/rajat/Desktop/shop/walDecor.html"
+                            onMouseOver="this.style.color='cornflowerblue'" onMouseOut="this.style.color='black'">Wall
+                            Decor</a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link active" href="C:/Users/rajat/Desktop/shop/teaCoaster.html"
+                            onMouseOver="this.style.color='cornflowerblue'" onMouseOut="this.style.color='black'">Tea
+                            Coaster</a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link active" href="C:/Users/rajat/Desktop/shop/fridgeMagnet.html"
+                            onMouseOver="this.style.color='cornflowerblue'" onMouseOut="this.style.color='black'">Fridge
+                            Magnet</a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link active" href="C:/Users/rajat/Desktop/shop/trending.html"
+                            onMouseOver="this.style.color='cornflowerblue'"
+                            onMouseOut="this.style.color='black'">Trending</a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link active" href="C:/Users/rajat/Desktop/shop/contactUs.html"
+                            onMouseOver="this.style.color='cornflowerblue'"
+                            onMouseOut="this.style.color='black'">Contact Us</a>
+                    </li>
+
+                </ul>
+
+                <a href="#"><i class="fas fa-search"></i></a>
+
+                <div class="dropdown">
+                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <a href="#"><i class="fas fa-user"></i></a>
+                    </button>
+
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Login"
+                                data-bs-whatever="@mdo">Login/Register</a></li>
+                        <li><a class="dropdown-item" href="#">Orders</a></li>
+                        <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                        <li><a class="dropdown-item" href="help.html">Help Centre</a></li>
+                        <li><a class="dropdown-item" href="contactUs.html">Contact Us</a></li>
+                        <li><a class="dropdown-item" href="#">Saved Addresses</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                    </ul>
+                </div>
+                <a href="#"><i class="fas fa-tag"></i></a>
+                <a href="C:/Users/rajat/Desktop/shop/cart.html"><i class="fas fa-shopping-cart"><big class="cartNum"><sup>0</sup></big></i></a>
+
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <!-- Login -->
+    <div class="modal fade" id="Login" tabindex="-1" aria-labelledby="LoginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginLabel">Login </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                    </form>
+
+                    <small>New User? <a href="#" data-bs-toggle="modal" data-bs-target="#register"
+                            data-bs-whatever="@mdo" data-bs-dismiss="modal">Register</a></small>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register -->
+    <div class="modal fade" id="register" tabindex="-1" aria-labelledby="registerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerLabel">Register </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                    </form>
+
+                    <small>Already a User? <a href="#" data-bs-toggle="modal" data-bs-target="#Login"
+                            data-bs-whatever="@mdo" data-bs-dismiss="modal">Login</a></small>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- body -->
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <!-- <h1 class="my-4">Page Heading
+            <small>Secondary Text</small>
+        </h1> -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row py-5">
+
+            <div class="col-md-8">
+                <!-- <img class="img-fluid" src="C:/Users/rajat/Desktop/shop/assets/pro1.png" alt=""> -->
+
+                <!-- Slider  Image size: 1895 X 841-->
+
+                <div id="carouselExampleCaptions" class="carousel carousel slide " data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="C:/Users/rajat/Desktop/shop/assets/aipanWall.png" class="d-block w-100" alt="...">
+                            <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div> -->
+                        </div>
+                        <div class="carousel-item">
+                            <img src="C:/Users/rajat/Desktop/shop/assets/aipanWall.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <!-- <h5>Second slide label</h5> -->
+                                <!-- <p>Some representative placeholder content for the second slide.</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="C:/Users/rajat/Desktop/shop/assets/aipanWall.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <!-- <h5>Third slide label</h5> -->
+                                <!-- <p>Some representative placeholder content for the third slide.</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="col-md-4">
+                <h2>Aipan Wall Decor Mandala Art</h2>
+                <h4 class="text-center"> <del>Rs 1499</del> Rs 999 (Rs 500 Off)</h4>
+
+
+                <button type="button" class="btn btn-warning add-cart" id="gif" onclick="onClick()">Add
+                    to cart</button>
+                <a href="" class="py-5 px-5"><button type="button" class="btn btn-danger" id="gifBtn">
+                        Buy Now</button></a>
+
+                <h4 class="py-3 text-center" style="color: green;">In Stock</h4>
+
+                <h3 class="my-3  text-center">Project Description</h3>
+                <p class="text-center">Aipan - Traditional art of Kumaon </p>
+
+
+
+            </div>
+
+
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        <!-- <h3 class="my-4">Related Projects</h3>
+
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#">
+                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#">
+                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#">
+                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#">
+                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+        </div> -->
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+
+
+    <!-- Details -->
+
+    <div class="row row-cols-1 row-cols-md-2 g-2">
+        <div class="accordion accordion-flush px-5" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Product Details
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><strong>Handmade</strong></li>
+                            <li><strong>Height: </strong> 8 Inch</li>
+                            <li><strong>Width: </strong> 8 Inch</li>
+                            <li><strong>Depth: </strong> 5.5 Inch</li>
+                            <li><strong>Material: </strong> MDF (Medium-Density Fibreboard)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="accordion accordion-flush px-5" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Reviews
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <section id="comments">
+                            <!-- <h2>Comments</h2> -->
+                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="1one"
+                                style="font-size:25px;cursor:pointer;" class="fa fa-star checked"></span>
+                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"
+                                style="font-size:25px;cursor:pointer;" class="fa fa-star "></span>
+                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="3one"
+                                style="font-size:25px;cursor:pointer;" class="fa fa-star "></span>
+                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="4one"
+                                style="font-size:25px;cursor:pointer;" class="fa fa-star"></span>
+                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="5one"
+                                style="font-size:25px;cursor:pointer;" class="fa fa-star"></span>
+                            <br />
+                            <textarea style="margin-top:5px; resize: none;     width: 100%;
+                height: 150px;" class="form-control" rows="3" id="comment" placeholder="Enter your review"></textarea>
+
+                            <button type="button" style="margin-top:10px;margin-left:5px;"
+                                class="btn btn-lg btn-warning">Submit</button>
+
+                            <script>
+                                var count;
+
+                                function starmark(item) {
+                                    count = item.id[0];
+
+                                    var subid = item.id.substring(1);
+                                    for (var i = 0; i < 5; i++) {
+                                        if (i < count) {
+                                            document.getElementById((i + 1) + subid).style.color = "orange";
+                                        }
+                                        else {
+                                            document.getElementById((i + 1) + subid).style.color = "grey";
+                                        }
+                                    }
+                                }
+                            </script>
+
+
+                        </section>
+
+
+
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
+
+    <!-- New Arrivals -->
+
+
+    <h2 id="gif">New Arrivals</h2>
+
+    <div class="card-group text-center ">
+        <div class="card shadow-sm  mb-5 bg-body rounded border-0 px-5 py-5 ">
+            <a href="#"><img src="C:/Users/rajat/Desktop/shop/assets/tea.png" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+                <h5 class="card-title"><a href="#">Tea Coaster</a></h5>
+                <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                 content. This content is a little bit longer.</p> -->
+
+            </div>
+        </div>
+        <div class="card shadow-sm  mb-5 bg-body rounded border-0 px-5 py-5">
+            <a href="#"><img src="C:/Users/rajat/Desktop/shop/assets/try1.png" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+                <h5 class="card-title"><a href="#">Wall Decor</a></h5>
+                <!-- <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
+
+            </div>
+        </div>
+        <div class="card shadow-sm  mb-5 bg-body rounded border-0 px-5 py-5">
+            <a href=""><img src="C:/Users/rajat/Desktop/shop/assets/fmagnet.png" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+                <h5 class="card-title"><a href="#">Fridge Magnet</a></h5>
+                <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                 content. This card has even longer content than the first to show that equal height action.</p> -->
+
+            </div>
+        </div>
+
+        <div class="card shadow-sm  mb-5 bg-body rounded border-0 px-5 py-5 ">
+            <a href="#"><img src="C:/Users/rajat/Desktop/shop/assets/tea.png" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+                <h5 class="card-title"><a href="#">Tea Coaster</a></h5>
+                <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                 content. This content is a little bit longer.</p> -->
+
+            </div>
+        </div>
+        <div class="card shadow-sm  mb-5 bg-body rounded border-0 px-5 py-5">
+            <a href="#"><img src="C:/Users/rajat/Desktop/shop/assets/try1.png" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+                <h5 class="card-title"><a href="#">Wall Decor</a></h5>
+                <!-- <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
+
+            </div>
+        </div>
+        <div class="card shadow-sm  mb-5 bg-body rounded border-0 px-5 py-5">
+            <a href=""><img src="C:/Users/rajat/Desktop/shop/assets/fmagnet.png" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+                <h5 class="card-title"><a href="#">Fridge Magnet</a></h5>
+                <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                 content. This card has even longer content than the first to show that equal height action.</p> -->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Related -->
+
+
+    <!-- Footer -->
+
+    <section>
+        <footer style="position: relative; z-index: 0; background: none">
+            <div class="footer-top">
+                <div class="container mx-auto">
+                    <div class="row">
+                        <div class="col-md-2 col-lg-3 footer-about wow fadeInUp animated"
+                            style="visibility: visible; animation-name: fadeInUp;">
+                            <img class="logo-footer my-4" src="C:/Users/rajat/Desktop/shop/assets/fav-icon.png"
+                                alt="logo-footer" data-at2x="assets/fav-icon.png" width="74" height="85">
+                            <p>
+                                Our Site Help Artist's To Sell Their Handmade Crafts
+                            </p>
+
+                        </div>
+                        <div class="col-md-6 col-lg-4 offset-lg-1 footer-contact wow fadeInDown animated my-4"
+                            style="visibility: visible; animation-name: fadeInDown;">
+                            <h3> Contact</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Indirapuram,Ghaziabad,UP</p>
+                            <p><i class="fas fa-phone"></i> Phone: 91+ 880-995-8031</p>
+                            <p><i class="fas fa-envelope"></i> Email: <a
+                                    href="Bazaar321@gmail.com">Bazaar321@gmail.com</a>
+                            </p>
+
+                        </div>
+                        <div class="col-md-4 col-lg-4 footer-links wow fadeInUp animated"
+                            style="visibility: visible; animation-name: fadeInUp;">
+                            <div class="row">
+                                <div class="col my-4">
+                                    <h3>Important</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <p><a class="scroll-link" href="#section-4">About US</a></p>
+                                    <p><a href="#">Report </a></p>
+                                    <p><a href="#">FAQ</a></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+
+                    <div class="col-md-6 footer-social   my-4">
+                        <!-- Facebook -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!"
+                            role="button"><i class="fab fa-facebook-f"></i></a>
+
+                        <!-- Twitter -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!"
+                            role="button"><i class="fab fa-twitter"></i></a>
+
+                        <!-- Google -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="#!"
+                            role="button"><i class="fab fa-google"></i></a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!"
+                            role="button"><i class="fab fa-instagram"></i></a>
+
+                        <!-- Linkedin -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="#!"
+                            role="button"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- Github -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!"
+                            role="button"><i class="fab fa-github"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="foot">
+                <footer class="container my-4">
+                    <p class="float-end"><a href="#"><i class="fas fa-arrow-alt-circle-up fa-3x"></i></a></p>
+                    <p>© Just Dinner, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+                </footer>
+            </div>
+
+        </footer>
+
+    </section>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+
+
+    <script>
+        function onClick() {
+            alert("Item Added to Cart");
+        }
+    </script>
+
+    <script src="C:/Users/rajat/Desktop/shop/js/main.js"></script>
+</body>
+
+</html>
